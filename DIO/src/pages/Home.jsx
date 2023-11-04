@@ -1,6 +1,6 @@
 import Button from '../components/Button';
 
-export default function Home() {
+export default function Home({onPage}) {
   return (
       <div className="w-full md:flex md:justify-between justify-center items-center">
         <div>
@@ -14,7 +14,7 @@ export default function Home() {
             comunidade com os melhores experts.
           </p>
           <div className='w-full md:text-left text-center'>
-            <Button text="Começar agora" />
+            <Button text="Começar agora" onClick={() => onPage('login')}/>
           </div>
         </div>
         <img src="../public/img1.png" alt="hero" className='md:block hidden'/>
